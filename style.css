@@ -1,0 +1,186 @@
+h1,h2,h3,h4,h5,h6,p,body,span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-bg{
+    background-color: #F7F9FF;
+}
+
+
+/* Header Style Css */
+
+.own-header .navbar-brand {
+    font-size: 25px;
+    font-weight: 600;
+}
+.own-header span {
+    display: inline-block;
+    color: #fff;
+    background: #6278df;
+    padding: 5px 11px;
+    font-size: 25px;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
+}
+
+/*   Slider Section   */
+.slider-section{
+    background: url(./image/mbr-10.jpg) no-repeat center center;
+    padding: 200px 0;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: -1;
+}
+
+/*   Number counter style css   */
+
+.number-counter-item h2 {
+    font-size: 50px;
+}
+
+/*    About Section style CSS    */
+
+.about-section-caption h2 {
+    font-size: 40px;
+    padding: 30px 0px;
+    margin-top: 75px;
+}
+
+
+/*  feature section css  */
+
+.feature-item{
+    height: 300px;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.1);
+}
+.feature-img-left {
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.feature-img-caption{
+    width: 60%;
+    padding: 20px;
+}
+.feature-img-left img {
+    height: 100%;
+    width: auto !important;
+    max-width: inherit;
+    position: relative;
+    left: -88px;
+}
+
+.feature-img-caption h4{
+    font-size: 23px;
+}
+
+
+/*   Portfolio Hover style Css */
+
+.portfolio-item a{
+    position: relative;
+    display: block;
+}
+.portfolio-item a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(98, 120, 223, 0.6);
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+
+.portfolio-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*    Pricing Table Style Css   */
+.pricing-table-item {
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+    padding: 40px;
+    background: #fff;
+}
+.pricing-table-item h2 {
+    font-size: 40px;
+    margin-left: 40px;
+}
+.pricing-table-item p {
+    margin-left: 46px;
+}
+.pricing-table-item ul {
+    list-style: none;
+    margin-left: 17px;
+    margin-bottom: 50px;
+}
+.pricing-table-item span {
+    display: inline-block;
+    width: 40px;
+    color: #6278DF;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.pricing-table-item ul li {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #767676;
+}
+
+.pricing-table-button a {
+    border: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+}
+
+
+/*   Testimonial Section Style Css    */
+
+
+.author-bio {
+    width: 200px;
+    margin: auto;
+}
+.testimonial-captions .author-bio img {
+    width: 75px;
+}
+.author-info h4 {
+    font-size: 18px;
+    position: relative;
+    right: 10px;
+    top: 15px;
+}
+.author-info p {
+    position: relative;
+    right: 13px;
+    top: 10px;
+}
+
+/*   About Section Style css   */
+
+
+.about-item .card{
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.3);
+}
+.about-item .card img {
+    width: 111px;
+    height: auto;
+    margin-top: -61px;
+    position: relative;
+    left: 10px;
+}
